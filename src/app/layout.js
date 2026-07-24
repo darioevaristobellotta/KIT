@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import SchemaOrg from "@/components/SchemaOrg";
+import GoogleTagManager from "@/components/GoogleTagManager";
 import "./globals.css";
 
 const inter = Inter({
@@ -62,6 +63,7 @@ export default function RootLayout({ children }) {
     <html lang="de" className={`${inter.variable} ${libreBaskerville.variable}`}>
       <head>
         <SchemaOrg />
+        <GoogleTagManager />
 
         {/* DNS Preconnect for Google Fonts & Icons CDN */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -72,41 +74,6 @@ export default function RootLayout({ children }) {
           rel="stylesheet" 
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" 
         />
-
-        {/* 
-          ========================================================================
-          GOOGLE TAG MANAGER / ANALYTICS (Auskommentiert - ID eintragen bei Bedarf)
-          ========================================================================
-          
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('consent', 'default', {
-                  'ad_storage': 'denied',
-                  'ad_user_data': 'denied',
-                  'ad_personalization': 'denied',
-                  'analytics_storage': 'denied',
-                  'wait_for_update': 500
-                });
-              `
-            }}
-          />
-          <Script
-            id="gtm-script"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                })(window,document,'script','dataLayer','GTM-XXXXXXX'); // HERE INSERT GTM ID
-              `
-            }}
-          />
-        */}
       </head>
       <body>
         <Header />
