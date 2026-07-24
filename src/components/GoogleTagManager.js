@@ -6,7 +6,7 @@ import Script from 'next/script';
  * GoogleTagManager Component
  * 
  * Modular, zero-overhead GTM & Consent Mode loader for Next.js App Router.
- * - Uses strategy="lazyOnload" to prevent blocking initial page rendering or Core Web Vitals.
+ * - Uses strategy="afterInteractive" (Vercel standard) for optimal performance and 100% reliable tracking.
  * - Automatically initializes GTM Consent Mode defaults (denied until user consent via CookieBanner).
  * - Only renders script tags if a valid GTM ID is provided via prop or NEXT_PUBLIC_GTM_ID env variable.
  */
@@ -41,10 +41,10 @@ export default function GoogleTagManager({ gtmId = process.env.NEXT_PUBLIC_GTM_I
         }}
       />
 
-      {/* Asynchronous Lazy-loaded GTM Script */}
+      {/* Asynchronous GTM Script (afterInteractive) */}
       <Script
         id="gtm-script"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
