@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check": "eslint && next build",
+    "analyze": "cross-env ANALYZE=true next build"
   },
   "dependencies": {
     "next": "16.2.10",
@@ -14,6 +16,8 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^16.2.10",
+    "cross-env": "^7.0.3",
     "eslint": "^9",
     "eslint-config-next": "16.2.10"
   }
