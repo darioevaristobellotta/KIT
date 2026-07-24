@@ -9,6 +9,8 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
+  preload: true,
+  fallback: ["system-ui", "-apple-system", "sans-serif"],
 });
 
 const libreBaskerville = Libre_Baskerville({
@@ -16,6 +18,8 @@ const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
   weight: ["400", "700"],
   display: "swap",
+  preload: true,
+  fallback: ["Georgia", "serif"],
 });
 
 export const viewport = {
@@ -58,11 +62,15 @@ export default function RootLayout({ children }) {
     <html lang="de" className={`${inter.variable} ${libreBaskerville.variable}`}>
       <head>
         <SchemaOrg />
+
+        {/* DNS Preconnect for Google Fonts & Icons CDN */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
         {/* Google Material Symbols Outlined Icons */}
         <link 
           rel="stylesheet" 
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=block" 
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" 
         />
 
         {/* 
