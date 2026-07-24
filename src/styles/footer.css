@@ -1,0 +1,66 @@
+/* Footer Component Styles (from learnquizdb) */
+
+.site-footer {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  padding: 40px 0;
+  margin-top: auto;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+.social-link {
+  color: var(--color-white);
+  opacity: 0.85;
+  transition: var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.footer-copyright {
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.footer-link {
+  color: var(--color-white);
+  transition: var(--transition-fast);
+}
+
+.footer-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer-separator {
+  opacity: 0.5;
+}

@@ -1,0 +1,30 @@
+# Dependencies
+/node_modules
+/.pnpm-store
+
+# Next.js build outputs
+/.next/
+/out/
+/build
+
+# Debug & Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment files
+.env*.local
+.env
+
+# IDE / OS
+.DS_Store
+*.pem
+.vscode/
+.idea/
+
+# Local reference folders
+/andereseite01
+/andereseite02
+/anderewebseite01
+/anderewebseite02
