@@ -9,13 +9,13 @@ export default function sitemap() {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/impressum`,
+      url: `${baseUrl}/imprint`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,
     },
     {
-      url: `${baseUrl}/datenschutz`,
+      url: `${baseUrl}/privacy-policy`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,

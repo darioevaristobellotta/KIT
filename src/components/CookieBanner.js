@@ -84,24 +84,23 @@ export default function CookieBanner() {
     >
       <p id="cookie-banner-title" className="sr-only">Cookie Consent Banner</p>
       <p>
-        Wir nutzen Cookies und ähnliche Technologien, um dir ein optimales Webseiten-Erlebnis zu bieten. 
-        Du kannst selbst entscheiden, welche Kategorien du zulassen möchtest.
+        To provide the best experiences, we use technologies like cookies to store and/or access device information.
         <br />
         <br />
-        <Link href="/datenschutz" target="_blank">
-          Datenschutz
+        <Link href="/privacy-policy" target="_blank">
+          Privacy Policy
         </Link>{" "}
         |{" "}
-        <Link href="/impressum" target="_blank">
-          Impressum
+        <Link href="/imprint" target="_blank">
+          Imprint
         </Link>
       </p>
       <div className="button-row">
         <button id="cookie-decline" onClick={handleDecline}>
-          Ablehnen
+          Decline
         </button>
         <button id="cookie-accept" onClick={handleAccept}>
-          Akzeptieren
+          Accept all
         </button>
       </div>
     </div>

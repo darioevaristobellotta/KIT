@@ -29,14 +29,16 @@ export default function Footer() {
         </div>
 
         <div className="footer-copyright">
-          © {new Date().getFullYear()} Dario Evaristo Bellotta<br />
-          Next.js Developer Kit & Google Material Design 3
+          © 2026 Copyright: Dario Evaristo Bellotta<br />
+          Developed by Dario Evaristo Bellotta and Google Antigravity<br />
+          Next.js and Google Material Design 3<br />
+          Works best on Chrome
         </div>
 
         <div className="footer-links">
-          <Link href="/impressum" className="footer-link">Impressum</Link>
+          <Link href="/imprint" className="footer-link">Imprint</Link>
           <span className="footer-separator">|</span>
-          <Link href="/datenschutz" className="footer-link">Datenschutz</Link>
+          <Link href="/privacy-policy" className="footer-link">Privacy Policy</Link>
         </div>
       </div>
     </footer>

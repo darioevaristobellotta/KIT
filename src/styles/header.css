@@ -32,17 +32,10 @@
   gap: 0.75rem;
 }
 
-.header-logo-badge {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: var(--radius-md);
-  background-color: var(--color-green-container);
-  color: hsl(var(--h-green), var(--s-green), 25%);
-  font-weight: 700;
-  font-size: 1.1rem;
+.header-logo-img {
+  height: 2.6rem;
+  width: auto;
+  object-fit: contain;
 }
 
 .header-brand {
@@ -54,26 +47,11 @@
 }
 
 .header-title {
-  font-family: var(--font-headline);
-  font-size: 1.2rem;
+  font-family: var(--font-libre-baskerville), Georgia, serif;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--color-text-dark);
-  letter-spacing: 0.05rem;
-}
-
-.header-badge-sub {
-  font-family: var(--font-body);
-  font-size: 0.6rem;
-  font-weight: 600;
-  letter-spacing: 0.07rem;
-  color: #354c48;
-  background-color: rgba(172, 195, 192, 0.22);
-  border: 1px solid rgba(172, 195, 192, 0.45);
-  padding: 0.1rem 0.45rem;
-  border-radius: var(--radius-full);
-  text-transform: uppercase;
-  margin-top: 0.2rem;
-  display: inline-block;
+  letter-spacing: 0.03rem;
 }
 
 .header-middle {
@@ -227,7 +205,7 @@
 
 @media (max-width: 992px) {
   .header-title {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   .dropdown-nav {
@@ -246,12 +224,12 @@
     gap: 0.4rem;
   }
 
-  .header-title {
-    font-size: 0.85rem;
+  .header-logo-img {
+    height: 2.1rem;
   }
 
-  .header-badge-sub {
-    font-size: 0.5rem;
+  .header-title {
+    font-size: 0.9rem;
   }
 
   .header-cta-pill {

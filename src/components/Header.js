@@ -8,9 +8,8 @@ export default function Header({ brandTitle = "Next.js Kit", navigationItems = [
 
   const defaultNavItems = navigationItems.length > 0 ? navigationItems : [
     { label: 'Home', href: '/' },
-    { label: 'Features', href: '/#features' },
-    { label: 'Impressum', href: '/impressum' },
-    { label: 'Datenschutz', href: '/datenschutz' },
+    { label: 'Imprint', href: '/imprint' },
+    { label: 'Privacy Policy', href: '/privacy-policy' },
   ];
 
   return (
@@ -18,12 +17,9 @@ export default function Header({ brandTitle = "Next.js Kit", navigationItems = [
       <div className="site-header">
         <div className="container header-container">
           <Link href="/" className="header-left">
-            <div className="header-logo-badge">
-              <span>DEB</span>
-            </div>
+            <img src="/logo.png" alt="Logo" className="header-logo-img" />
             <div className="header-brand">
               <span className="header-title">{brandTitle}</span>
-              <span className="header-badge-sub">DEV KIT</span>
             </div>
           </Link>
 
